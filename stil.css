@@ -1,0 +1,37 @@
+/* Osnovne postavke stranice */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f6f9fc;
+    color: #222;
+    margin: 40px;
+}
+
+
+h1 {
+    font-weight: 700;
+    color: #006400;
+    background-color: #ccffcc;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #004d00;
+    background-color: #e6ffe6;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: 700;
+    margin-top: 40px;
+}
+
+
+p {
+    font-weight: 400;
+    font-style: italic;
+    background-color: #ffffff;
+    color: #333;
+    padding: 12px 18px;
+    margin-top: 20px;
+    border-left: 5px solid #006400;
+    border-radius: 5px;
+}
