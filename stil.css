@@ -1,0 +1,177 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f6f9fc;
+    color: #222;
+    margin: 40px;
+    text-align: justify;
+}
+
+h1 {
+    font-weight: 700;
+    color: #3A6351;
+    background-color: #DFF2E1;
+    padding: 15px 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h2 {
+    color: #2F5242;
+    background-color: #E9F7ED;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: 700;
+    margin-top: 40px;
+}
+section#bazični-sportovi {
+    text-align: center;
+}
+
+p {
+    font-weight: 400;
+    font-style: italic;
+    background-color: #ffffff;
+    color: #333;
+    padding: 12px 18px;
+    margin-top: 20px;
+    border-left: 5px solid #4E8D7C;
+    border-radius: 5px;
+}
+
+/* Popisi */
+ul {
+    list-style: square;
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    margin-top: 20px;
+    border-left: 4px solid #3A6351;
+}
+
+ol {
+    list-style: decimal-leading-zero;
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    margin-top: 20px;
+    border-left: 4px solid #3A6351;
+}
+
+ul li, ol li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+span.posebno {
+    color: #2F5242;
+    font-weight: 700;
+    background-color: #E9F7ED;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+sup {
+    font-size: 0.7em;
+    vertical-align: super;
+    color: #4E8D7C;
+}
+
+span.potpis {
+    display: block;
+    text-align: right;
+    font-style: italic;
+    margin-top: 20px;
+    color: #3A6351;
+}
+
+footer {
+    margin-top: 50px;
+    background-color: #E9F7ED;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 0.9em;
+}
+
+section p:first-of-type {
+    border-color:#3A6351 ;
+}
+
+ul li strong, ol li strong {
+    color: #3A6351;
+}
+
+h2:first-of-type {
+    float: none;
+    display: block;
+}
+
+/* Float slike */
+img.float-right {
+    float: right;
+    margin: 0 0 1em 1em;
+    width: 220px;
+    border-radius: 10px;
+    border: 2px solid #3A6351;
+}
+
+img.float-left {
+    float: left;
+    margin: 0 1em 1em 0;
+    width: 220px;
+    border-radius: 10px;
+    border: 2px solid #3A6351;
+}
+
+/* Formular */
+input[type="text"], input[type="email"], input[type="url"], select {
+    display: inline-block;
+    width: calc(100% - 180px);
+    padding: 8px 10px;
+    border: 1px solid #d1d5da;
+    border-radius: 6px;
+}
+
+input[type="checkbox"][value="da"] {
+    accent-color: #3A6351;
+}
+
+input:focus, select:focus {
+    outline: 3px solid rgba(58,99,81,0.2);
+    border-color: #3A6351;
+    background-color: #ffffffcc;
+}
+
+input:hover, select:hover {
+    background-color: #ffffffcc;
+    border-color: #3A6351;
+}
+
+button {
+    background-color: #3A6351;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    margin: 10px 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+button:hover { background-color: #2F5242; }
+button:active { transform: translateY(1px); }
+
+/* Media query */
+@media (max-width: 600px) {
+    .form-row label { float: none; width: 100%; font-weight: bold; }
+    body { font-size: 0.9rem; }
+    h1 { font-size: 2.5rem; }
+    img.float-right, img.float-left { float: none; display: block; margin: 10px auto; }
+}
+
+/* Descendant selector */
+section ul li { margin-left: 10px; }
+
+em { font-style: italic; }
+strong { font-weight: 700; }
+

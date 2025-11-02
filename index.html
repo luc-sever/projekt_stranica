@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vodič kroz sportove</title>
+
+    <!-- Google font s font-display swap -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Vanjski CSS -->
+    <link rel="stylesheet" href="stil.css">
+</head>
+<body>
+    <h1>Vodič kroz sportove</h1>
+
+    <section>
+        <h2>Povijest sporta</h2>
+        <p><strong>Povijest:</strong> Početci športskih natjecanja sežu u doba prapovijesti. Prednost onih koji su bolje <em>trčali</em>, <em>skakali</em>, <em>bacali</em>, <em>plivali</em> ili <em>gađali</em> bila je neosporna, pa su se zato te djelatnosti vježbale kao sastavni dio borbe za održanje i vojno obrazovanje. Proces djelomičnog izdvajanja igara od tih izravno praktičnih ciljeva i njihovo pretvaranje u zasebni, često ritualni aspekt života zajednice, trajao je tisućljećima. S razvojem civilizacije u igrama su se pojavili i posebni predmeti kao <span class="posebno">lopte</span>, <span class="posebno">batovi</span>, <span class="posebno">štapovi</span> i <span class="posebno">kugle</span>, a natjecanja su se održavala na posebno izgrađenim prostorima (igralištima, borilištima).</p>
+    </section>
+
+    <section>
+        <h2>Što je sport?</h2>
+        <p><strong>Sport</strong> danas predstavlja organiziranu fizičku aktivnost koja uključuje <em>natjecanje</em>, <em>rekreaciju</em> i <strong>osobni razvoj</strong>. Osim što potiče zdravlje i kondiciju, sport razvija timski duh, samodisciplinu, poštovanje prema protivniku i osjećaj zajedništva. U suvremenom društvu sport ima i društvenu, kulturnu i ekonomsku ulogu — okuplja ljude različitih nacija i kultura te promiče vrijednosti fer-pleja i suradnje.</p>
+        <p>Sport također pozitivno utječe na rad <em>srca</em> i <em>pluća</em>. Tijekom aktivnosti pluća preuzimaju kisik <span class="posebno">O<sub>2</sub></span> i dopremaju ga u mišiće, što povećava energiju i izdržljivost te potiče lučenje endorfina<sup>1</sup>, tzv. hormona sreće.</p>
+    </section>
+
+    <section id="bazični-sportovi">
+        <h2>Bazični sportovi </h2>
+        <ol>
+            <li>
+                <p><strong>Atletika</strong> — <em>Trčanja</em>, <em>skokovi</em>, hodačke i bacačke discipline. Zbog svoje sveobuhvatnosti naziva se kraljicom sportova. Atletskim vježbama stječe se fizička snaga, izdržljivost, brzina i okretnost, a učvršćuju se i svojstva volje kao što su <span class="posebno">hrabrost</span>, <span class="posebno">odlučnost</span> i <span class="posebno">upornost</span>.</p>
+            </li>
+            <li>
+                <p><strong>Plivanje</strong> — aktivira gotovo sve mišiće u tijelu i odlično je za osobe koje žele trenirati bez prevelikog opterećenja na zglobove. Osim fizičkih koristi, plivanje pruža osjećaj mira i opuštanja, a istodobno jača srce i pluća. Plivači razvijaju izdržljivost i preciznu tehniku disanja, što doprinosi boljoj kontroli tijela i fokusu.</p>
+            </li>
+            <li>
+                <p><strong>Gimnastika</strong> — sustav odabranih tjelesnih vježbi, katkad uz uporabu pomagala i sprava, kojima je svrha razvoj, povećavanje i održavanje čovjekovih motoričkih sposobnosti, postizanje okretnosti, gipkosti, brzine i koordinacije pokreta, snage i izdržljivosti te jačanje zdravlja. Gimnastičari razvijaju iznimnu kontrolu tijela i ravnotežu.</p>
+            </li>
+            <li>
+                <p><strong>Džudo</strong> — borilački šport za muškarce i žene, koji je u Japanu 1882. utemeljio Jigoro Kano kao suvremeni nastavak starojapanske borilačke vještine džiju-džicu. Cilj je borbe da se protivnik baci na leđa ili bok, primjenjujući dopuštene zahvate. Džudo potiče samokontrolu, poštovanje i mentalnu snagu.</p>
+            </li>
+        </ol>
+        <img src="OIP.jfif" alt="Olimpijski krugovi" class="float-right">
+       
+    </section>
+
+    <section>
+        <h2>Prednosti redovitog bavljenja sportom</h2>
+        <ul>
+            <li><strong>Fizičke koristi:</strong> bolja kondicija, jači mišići i zdravije srce.</li>
+            <li><strong>Mentalne koristi:</strong> smanjenje stresa, bolja koncentracija i samopouzdanje.</li>
+            <li><strong>Društvene koristi:</strong> timski rad, suradnja i poštovanje.</li>
+        </ul>
+    </section>
+
+    <section id="kontakt">
+        <h2>Kontakt i prijava na trening</h2>
+        <form id="kontaktForm" name="kontaktForm" action="#" method="post" autocomplete="on">
+            <fieldset>
+                <legend>Podaci o sudioniku</legend>
+
+                <div class="form-row">
+                    <label for="ime">Ime i prezime</label>
+                    <input id="ime" name="ime" type="text" placeholder="Upišite ime i prezime" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="email">E-mail</label>
+                    <input id="email" name="email" type="email" placeholder="primjer@domena.hr" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="website">Osobna stranica</label>
+                    <input id="website" name="website" type="url" placeholder="https://primjer.hr">
+                </div>
+
+                <div class="form-row">
+                    <label for="sport">Željeni sport</label>
+                    <select id="sport" name="sport" required>
+                        <option value="">— odaberite —</option>
+                        <option value="atletika">Atletika</option>
+                        <option value="plivanje">Plivanje</option>
+                        <option value="gimnastika">Gimnastika</option>
+                        <option value="dzudo">Džudo</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="termin">Preferirani termin</label>
+                    <input id="termin" name="termin" type="text" list="termini" placeholder="Odaberite termin">
+                    <datalist id="termini">
+                        <option value="Jutro (08:00 - 10:00)"></option>
+                        <option value="Poslijepodne (17:00 - 19:00)"></option>
+                        <option value="Večer (19:30 - 21:00)"></option>
+                    </datalist>
+                </div>
+
+                <div class="form-row checkbox-row">
+                    <label for="newsletter">Prijava na newsletter</label>
+                    <input id="newsletter" name="newsletter" type="checkbox" value="da">
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit">Pošalji prijavu</button>
+                    <button type="reset">Poništi</button>
+                </div>
+            </fieldset>
+        </form>
+    </section>
+
+    <footer>
+        <p><em><sup>1</sup>Endorfini</em> poboljšavaju raspoloženje i smanjuju bol.</p>
+        <span class="potpis">Izradila: Lucija Sever</span>
+    </footer>
+</body>
+</html>
+
