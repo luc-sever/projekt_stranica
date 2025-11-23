@@ -28,9 +28,9 @@ section#bazični-sportovi {
     text-align: center;
 }
 
-/* NOVO — izbjegavanje ponavljanja margina za sve sekcije */
+
 section.blok {
-    margin-bottom: 40px; /* NOVO */
+    margin-bottom: 40px; 
 }
 
 p {
@@ -96,8 +96,8 @@ footer {
     border-radius: 8px;
     font-size: 0.9em;
     
-    position: relative; /* NOVO */
-    top: 10px;          /* NOVO */
+    position: relative; 
+    top: 10px;          
 }
 
 section p:first-of-type {
@@ -130,7 +130,7 @@ img.float-left {
 }
 
 /* NOVO — atribut-selektori */
-input[type="checkbox"][value="da"] { /* NOVO */
+input[type="checkbox"][value="da"] { 
     accent-color: #3A6351;
 }
 
@@ -138,7 +138,7 @@ input[type="text"],
 input[type="email"],
 input[type="url"],
 select {
-    display: inline-block; /* NOVO */
+    display: inline-block; 
     width: calc(100% - 180px);
     padding: 8px 10px;
     border: 1px solid #d1d5da;
@@ -216,15 +216,15 @@ table.sport-tablica {
     overflow: hidden;
 }
 
-/* NOVO — atribut selektor za tablicu */
+
 table[data-tip="usporedba"] { 
-    border: 3px solid #2F5242; /* NOVO */
+    border: 3px solid #2F5242; 
 }
 
 .sport-tablica th, .sport-tablica td {
     border: 1px solid #3A6351;
     padding: 12px 16px;
-    text-align: center; /* NOVO */
+    text-align: center; 
 }
 
 .sport-tablica th {
@@ -262,14 +262,14 @@ table[data-tip="usporedba"] {
 
 /* NOVO — hijerarhijski selektor */
 section.blok p span.posebno {
-    display: inline-block;  /* NOVO */
-    margin: 2px;             /* NOVO */
+    display: inline-block;  
+    margin: 2px;             
 }
 
 /* NOVO — kombinirani selektor (ul i ol unutar sekcije) */
 section.blok ul li p,
 section.blok ol li p {
-    margin-left: 20px; /* NOVO */
+    margin-left: 20px; 
 }
 
 /* NOVO — čišćenje floata */
@@ -279,17 +279,18 @@ section#bazični-sportovi::after {
     clear: both;
 }
 
-/* NOVO — apsolutno pozicioniranje potpisa */
+
 .potpis {
-    position: absolute; /* NOVO */
-    right: 25px;        /* NOVO */
-    bottom: 10px;       /* NOVO */
+    position: absolute; 
+    right: 25px;        
+    bottom: 10px;       
 }
 
-/* NOVO — selektor po atributu forme */
+
 form[data-form="prijava"] input[required] {
-    border-left: 4px solid #3A6351; /* NOVO */
+    border-left: 4px solid #3A6351;
 }
+
 
 
 
