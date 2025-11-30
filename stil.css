@@ -28,7 +28,6 @@ section#bazični-sportovi {
     text-align: center;
 }
 
-
 section.blok {
     margin-bottom: 40px; 
 }
@@ -95,7 +94,6 @@ footer {
     padding: 15px;
     border-radius: 8px;
     font-size: 0.9em;
-    
     position: relative; 
     top: 10px;          
 }
@@ -129,7 +127,6 @@ img.float-left {
     border: 2px solid #3A6351;
 }
 
-/* NOVO — atribut-selektori */
 input[type="checkbox"][value="da"] { 
     accent-color: #3A6351;
 }
@@ -138,7 +135,7 @@ input[type="text"],
 input[type="email"],
 input[type="url"],
 select {
-    display: inline-block; 
+    display: inline-block;
     width: calc(100% - 180px);
     padding: 8px 10px;
     border: 1px solid #d1d5da;
@@ -175,25 +172,6 @@ button:active {
     transform: translateY(1px);
 }
 
-@media (max-width: 600px) {
-    .form-row label {
-        float: none;
-        width: 100%;
-        font-weight: bold;
-    }
-    body {
-        font-size: 0.9rem;
-    }
-    h1 {
-        font-size: 2.5rem;
-    }
-    img.float-right, img.float-left {
-        float: none;
-        display: block;
-        margin: 10px auto;
-    }
-}
-
 section ul li {
     margin-left: 10px;
 }
@@ -206,7 +184,7 @@ strong {
     font-weight: 700;
 }
 
-/* TABLICA */
+
 table.sport-tablica {
     width: 100%;
     border-collapse: collapse;
@@ -215,7 +193,6 @@ table.sport-tablica {
     border-radius: 10px;
     overflow: hidden;
 }
-
 
 table[data-tip="usporedba"] { 
     border: 3px solid #2F5242; 
@@ -260,25 +237,21 @@ table[data-tip="usporedba"] {
     margin-bottom: 15px;
 }
 
-/* NOVO — hijerarhijski selektor */
 section.blok p span.posebno {
     display: inline-block;  
     margin: 2px;             
 }
 
-/* NOVO — kombinirani selektor (ul i ol unutar sekcije) */
 section.blok ul li p,
 section.blok ol li p {
-    margin-left: 20px; 
+    margin-left: 20px;
 }
 
-/* NOVO — čišćenje floata */
 section#bazični-sportovi::after {
     content: "";
     display: block;
     clear: both;
 }
-
 
 .potpis {
     position: absolute; 
@@ -286,10 +259,45 @@ section#bazični-sportovi::after {
     bottom: 10px;       
 }
 
-
 form[data-form="prijava"] input[required] {
-    border-left: 4px solid #3A6351;
+    border-left: 4px solid #3A6351; 
 }
+
+iframe, embed, object {
+    border: 2px solid #3A6351;
+    border-radius: 8px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 560px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 600px) {
+    .form-row label {
+        float: none;
+        width: 100%;
+        font-weight: bold;
+    }
+    body {
+        font-size: 0.9rem;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    img.float-right, img.float-left {
+        float: none;
+        display: block;
+        margin: 10px auto;
+    }
+
+    iframe, embed, object, picture img {
+        width: 100%;
+        height: auto;
+    }
+}
+
 
 
 
